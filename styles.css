@@ -323,7 +323,7 @@ footer .attribution {
 @media only screen and (width < 768px) {
     body {
         grid-template-rows: minmax(30px, 60px) 1fr auto;
-        width: 300px;
+        width: 340px;
         max-width: 100%;
         row-gap: 10px;
     }
@@ -340,11 +340,8 @@ footer .attribution {
         content: "";
         background:  url(assets/images/icon-menu.svg);
         background-size: cover;
-        display: block;
         width: 40px; 
         height: 17px;
-        position: absolute;
-        right: 10px;
         cursor: pointer;
     }
 
@@ -354,12 +351,20 @@ footer .attribution {
         margin: 0 auto;
     }
 
+    .web-3-sec .web-3-title {
+        font-size: 2.5rem;
+    }
+
     .trending-sec {
         grid-template-areas: 
             "one"
             "two"
             "three"
         ;
+    }
+
+    .trending-sec .articles .content > p {
+        line-height: 20px;
     }
 
     footer {
