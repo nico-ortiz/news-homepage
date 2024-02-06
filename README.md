@@ -14,8 +14,18 @@ Users should be able to:
 ### Screenshot
 
 ![](/assets/images/screenshot_desktop.jpg)
-![](/assets/images/screenshot_mobile.jpg)
-![](/assets/images/screenshot_sidebar.jpg)
+
+<details>
+<summary>Mobile screenshot</summary>
+<br>
+  <img src='/assets/images/screenshot_mobile.jpg' >
+</details>
+
+<details>
+<summary>Sidebar screenshot</summary>
+<br>
+  <img src='/assets/images/screenshot_sidebar.jpg'>
+</details>
 
 ### Links
 
