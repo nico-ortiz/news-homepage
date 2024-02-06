@@ -15,8 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <img src="assets/images/logo.svg" alt="logo">
+  <header class="header mobile-image">
+    <img class="logo" src="assets/images/logo.svg" alt="logo">
     <nav class="navbar">
       <ul>
         <li class="nav-link">Home</li>
@@ -26,6 +26,19 @@
         <li class="nav-link">Categories</li>
       </ul>
     </nav>
+    <img class="icon-menu" src="assets/images/icon-menu.svg" alt="icon-menu">
+    <div class="navbar-mobile-container">
+      <nav class="navbar-mobile">
+        <img class="img-close-menu" src="assets/images/icon-menu-close.svg" alt="icon-menu-close" title="menu">
+        <ul>
+          <li class="nav-link">Home</li>
+          <li class="nav-link">New</li>
+          <li class="nav-link">Popular</li>
+          <li class="nav-link">Trending</li>
+          <li class="nav-link">Categories</li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <section class="web-3-sec items-container">
@@ -83,5 +96,6 @@
       Coded by <a class="social-links" href="https://www.linkedin.com/in/nicolas-a-ortiz/" target="_blank">Nicolás Ortiz</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -51,6 +51,65 @@ body {
     color: var(--soft-red);
 }
 
+.header .icon-menu {
+    display: none;
+}
+
+.navbar-mobile-container {
+    display: none;
+}
+
+
+.navbar-mobile-container.open {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-mobile-container.open .navbar-mobile {
+    width: 70%;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+}
+
+.navbar-mobile-container.open .navbar-mobile > img {
+    background-size: cover;
+    width: 32px; 
+    height: 31px;
+    cursor: pointer;
+    align-self:flex-end;
+    margin-bottom: 70px;
+}
+
+.navbar-mobile-container.open .navbar-mobile > ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar-mobile-container.open .navbar-mobile > ul .nav-link{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    transition: .4s;
+}
+
+.navbar-mobile-container.open .navbar-mobile > ul .nav-link:hover {
+    cursor: pointer;
+    color: var(--soft-red);
+}
+
 .main-container {
     display: grid;
     gap: 30px;
@@ -271,6 +330,10 @@ footer .attribution {
         ;
     }
 
+    .navbar-mobile-container.open {
+        display: none;
+    }
+
     .web-3-sec {
         grid-template-areas: 
             "one one"
@@ -328,7 +391,7 @@ footer .attribution {
         row-gap: 10px;
     }
 
-    .header > img {
+    .header .logo {
         width: 50px;
     }
 
@@ -336,13 +399,10 @@ footer .attribution {
         display: none;
     }
 
-    .header::after {
-        content: "";
-        background:  url(assets/images/icon-menu.svg);
-        background-size: cover;
-        width: 40px; 
+    .header .icon-menu {
+        display: block;
+        width: 40px;
         height: 17px;
-        cursor: pointer;
     }
 
     .web-3-sec .web-3-img {
@@ -369,5 +429,15 @@ footer .attribution {
 
     footer {
         margin-top: 20px;
+    }
+}
+
+@media only screen and (width < 375px) {
+    body {
+        width: 300px;
+    }
+
+    .web-3-sec {
+        display: initial;
     }
 }
